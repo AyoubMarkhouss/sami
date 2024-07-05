@@ -3,6 +3,8 @@ import React, { useRef } from "react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const Activity = () => {
    const ref = useRef(null);
@@ -21,7 +23,10 @@ const Activity = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h2>
       </div>
-      <div ref={ref} className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+      <div
+        ref={ref}
+        className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
+      >
         <motion.div
           ref={ref}
           initial={{ opacity: 0, scale: 0.5 }}
@@ -33,27 +38,33 @@ const Activity = () => {
           }}
           className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
         >
-          <img src="/bg.jpg" className="object-cover w-full h-64" alt="" />
+          <Image
+            width={1500}
+            height={1500}
+            src="/bg.jpg"
+            className="object-cover w-full h-64"
+            alt=""
+          />
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-              <a
+              <Link
                 href="/"
                 className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                 aria-label="Category"
                 title="traveling"
               >
                 traveling
-              </a>
+              </Link>
               <span className="text-gray-600">— 28 Dec 2020</span>
             </p>
-            <a
+            <Link
               href="/"
               aria-label="Category"
               title="Visit the East"
               className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               Visit the East
-            </a>
+            </Link>
             <p className="mb-2 text-gray-700">
               Sed ut perspiciatis unde omnis iste natus error sit sed quia
               consequuntur magni voluptatem doloremque.
@@ -77,27 +88,33 @@ const Activity = () => {
           }}
           className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
         >
-          <img src="/bg.jpg" className="object-cover w-full h-64" alt="" />
+          <Image
+            width={1500}
+            height={1500}
+            src="/bg.jpg"
+            className="object-cover w-full h-64"
+            alt=""
+          />
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-              <a
+              <Link
                 href="/"
                 className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                 aria-label="Category"
                 title="traveling"
               >
                 traveling
-              </a>
+              </Link>
               <span className="text-gray-600">— 28 Dec 2020</span>
             </p>
-            <a
+            <Link
               href="/"
               aria-label="Category"
               title="Simple is better"
               className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               Simple is better
-            </a>
+            </Link>
             <p className="mb-2 text-gray-700">
               Sed ut perspiciatis unde omnis iste natus error sit sed quia
               consequuntur magni voluptatem doloremque.
@@ -121,27 +138,33 @@ const Activity = () => {
           }}
           className="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm"
         >
-          <img src="/bg.jpg" className="object-cover w-full h-64" alt="" />
+          <Image
+            width={1500}
+            height={1500}
+            src="/bg.jpg"
+            className="object-cover w-full h-64"
+            alt=""
+          />
           <div className="p-5 border border-t-0">
             <p className="mb-3 text-xs font-semibold tracking-wide uppercase">
-              <a
+              <Link
                 href="/"
                 className="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700"
                 aria-label="Category"
                 title="traveling"
               >
                 traveling
-              </a>
+              </Link>
               <span className="text-gray-600">— 28 Dec 2020</span>
             </p>
-            <a
+            <Link
               href="/"
               aria-label="Category"
               title="Film It!"
               className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               Film It!
-            </a>
+            </Link>
             <p className="mb-2 text-gray-700">
               Sed ut perspiciatis unde omnis iste natus error sit sed quia
               consequuntur magni voluptatem doloremque.
