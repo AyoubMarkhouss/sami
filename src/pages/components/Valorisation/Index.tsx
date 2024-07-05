@@ -25,10 +25,10 @@ const Index = () => {
             solutions de proximité, simples, efficaces, économiques et durables.
             La gestion des déchets organiques est un domaine complexe
             nécessitant des compétences techniques spécifiques. Notre mission
-            inclut également le conseil et l'accompagnement des collectivités et
-            des entreprises dans leurs projets de tri, de collecte et de
-            valorisation de leurs déchets, et plus particulièrement de leurs
-            biodéchets.
+            inclut également le conseil et l&apos;accompagnement des
+            collectivités et des entreprises dans leurs projets de tri, de
+            collecte et de valorisation de leurs déchets, et plus
+            particulièrement de leurs biodéchets.
           </p>
           <br />
         </div>
@@ -54,9 +54,9 @@ const Index = () => {
         </div>
         <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pl-10">
           <p>
-            • En l&apos;absence de tri et d'un ramassage adapté, les biodéchets
-            sont collectés avec les ordures ménagères et ne bénéficient pas d'un
-            traitement approprié.
+            • En l&apos;absence de tri et d&apos;un ramassage adapté, les
+            biodéchets sont collectés avec les ordures ménagères et ne
+            bénéficient pas d&apos;un traitement approprié.
             <br /> • Parallèlement, nos sols s&apos;appauvrissent, et des
             apports organiques seraient nécessaires pour enrichir efficacement
             les terres agricoles.Notre force repose sur :<br />• Une écoute
@@ -70,8 +70,8 @@ const Index = () => {
           <br />
           <p>
             EPIVER, en s&apos;appuyant sur une expertise éprouvée et une
-            approche innovante, s'engage à transformer la gestion des biodéchets
-            et à enrichir durablement les sols agricoles.
+            approche innovante, s&apos;engage à transformer la gestion des
+            biodéchets et à enrichir durablement les sols agricoles.
           </p>
         </div>
         <div className="md:hidden flex justify-center items-center col-span-3 md:col-span-1 pt-5 md:pt-0">
