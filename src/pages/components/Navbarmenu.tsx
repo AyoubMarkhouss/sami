@@ -19,9 +19,12 @@ export default function Navnext() {
   // const menuItems = ["À propos", "Services", "Expertises", "Blog", "Contact"];
   const menuItems = [
     { label: "À propos", link: "/" },
-    { label: "Services", link: "/services" },
-    { label: "Expertises", link: "/expertises" },
-    { label: "Destributeurs", link: "/blog" },
+    { label: "Lombricompost", link: "/lombricompost" },
+    {
+      label: "Valorisation de biodechets",
+      link: "/Valorisation_de_biodechets",
+    },
+    { label: "Destributeurs", link: "/destributeurs" },
     { label: "Contact", link: "/contact" },
   ];
 
@@ -49,45 +52,13 @@ export default function Navnext() {
       isBlurred={false}
       className={navbarBlur ? "blurred" : "trans"}
       id="nav"
-    > 
-    
-      <NavbarContent className="hidden sm:flex gap-3 ">
-        <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-xl text-slate-100"
-            href="/"
-          >
-            À propos
-          </Button>
-        </NavbarItem>
-        <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-xl text-slate-100"
-            href="/"
-          >
-            Services
-          </Button>
-        </NavbarItem>
-
-        <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-xl text-slate-100"
-            href="/"
-          >
-            Distributeurs
-          </Button>
-        </NavbarItem>
-      </NavbarContent>
-
-      <NavbarContent justify="center">
+    >
+      <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden "
         />
-        <NavbarBrand className="text-white text-xl" >
+        <NavbarBrand className="text-white text-xl">
           <Image
             alt="logo"
             src="/epiver-logo.png"
@@ -97,33 +68,51 @@ export default function Navnext() {
           />
         </NavbarBrand>
       </NavbarContent>
+      <NavbarContent className="hidden sm:flex gap-3" justify="end">
+        <NavbarItem>
+          <Button
+            as={Link}
+            className="bg-transparent text-lg text-slate-100"
+            href="/"
+          >
+            À propos
+          </Button>
+        </NavbarItem>
 
-      <NavbarContent className="hidden sm:flex gap-3 " justify="end">
         <NavbarItem>
           <Button
             as={Link}
-            className="bg-transparent text-xl text-slate-100"
-            href="/"
+            className="bg-transparent text-lg text-slate-100"
+            href="/lombricompost"
           >
-            Expertises
+            Lombricompost
           </Button>
         </NavbarItem>
         <NavbarItem>
           <Button
             as={Link}
-            className="bg-transparent text-xl text-slate-100"
-            href="/"
+            className="bg-transparent text-lg text-slate-100"
+            href="/Valorisation_de_biodechets"
           >
-            Services
+            Valorisation de biodechets
           </Button>
         </NavbarItem>
         <NavbarItem>
           <Button
             as={Link}
-            className="bg-transparent text-xl text-slate-100"
+            className="bg-transparent text-lg text-slate-100"
             href="/"
           >
-           Contact
+            Distributeurs
+          </Button>
+        </NavbarItem>
+        <NavbarItem>
+          <Button
+            as={Link}
+            className="bg-transparent text-lg text-slate-100"
+            href="/"
+          >
+            Contact
           </Button>
         </NavbarItem>
       </NavbarContent>
