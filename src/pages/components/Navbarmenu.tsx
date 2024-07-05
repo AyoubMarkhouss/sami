@@ -21,7 +21,7 @@ export default function Navnext() {
     { label: "À propos", link: "/" },
     { label: "Services", link: "/services" },
     { label: "Expertises", link: "/expertises" },
-    { label: "Blog", link: "/blog" },
+    { label: "Destributeurs", link: "/blog" },
     { label: "Contact", link: "/contact" },
   ];
 
@@ -140,11 +140,11 @@ export default function Navnext() {
           </Button>
         </NavbarItem>
       </NavbarContent> */}
-      <NavbarMenu className="mt-8 sm:mt-0">
+      <NavbarMenu className="mt-8 sm:mt-0 bg-darkbrown">
         {menuItems.map((item) => (
           <NavbarMenuItem key={item.label}>
             <Link
-              className="medium w-full  text-slate-50 text-3xl pt-5"
+              className="medium w-full text-lightbrown text-3xl pt-5"
               href={item.link}
               size="lg"
             >
