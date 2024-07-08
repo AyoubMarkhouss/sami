@@ -61,10 +61,10 @@ export default function Navnext() {
         <NavbarBrand className="text-white text-xl">
           <Image
             alt="logo"
-            src="/epiver-logo.png"
+            src="/logo.png"
             width={1200}
             height={1200}
-            className="w-24 sm:w-36 ml-24 sm:ml-0"
+            className="w-16 ml-24 sm:ml-0"
           />
         </NavbarBrand>
       </NavbarContent>

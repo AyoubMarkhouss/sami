@@ -17,10 +17,10 @@ const Footer = () => {
             <Link href="/" about="d">
               <Image
                 alt="aa"
-                src="/epiver-logo.png"
+                src="/logo.png"
                 width={2500}
                 height={2500}
-                className="w-48 "
+                className="w-32 pb-8"
               />
             </Link>
 
