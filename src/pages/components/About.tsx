@@ -6,7 +6,7 @@ const About = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div id="about" className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -19,10 +19,10 @@ const About = () => {
         className="grid gap-10 lg:grid-cols-2"
       >
         <div className="lg:pr-10">
-          <h5 className="mb-4 text-4xl font-extrabold leading-none text-lightbrown">
+          <h5 className="mb-4 text-4xl text-center font-extrabold leading-none text-lightbrown">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </h5>
-          <p className="text-lg text-gray-200">
+          <p className="text-lg text-gray-200 text-justify">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem
             accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
             quae explicabo. Sed ut perspiciatis unde omnis iste natus error sit

@@ -4,7 +4,7 @@ import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { useRouter } from "next/router";
-import { Link as ScrolliLink } from "react-scroll";
+// import { Link as ScrolliLink } from "react-scroll";
 import Link from "next/link";
 
 const Footer = () => {
@@ -28,18 +28,25 @@ const Footer = () => {
               {router.pathname === "/"
                 ? content.map((item) => {
                     return (
-                      <ScrolliLink
-                        smooth={true}
-                        spy={true}
-                        duration={1500}
-                        offset={-220}
+                      // <ScrolliLink
+                      //   smooth={true}
+                      //   spy={true}
+                      //   duration={1500}
+                      //   offset={-220}
+                      //   key={item.id}
+                      //   to={item.link}
+                      //   className="mx-4 cursor-pointer text-sm lg:text-xl text-slate-50 transition-colors duration-300 hover:text-green "
+                      //   aria-label="Reddit"
+                      // >
+                      //   {item.label}
+                      // </ScrolliLink>
+                      <Link
                         key={item.id}
-                        to={item.link}
-                        className="mx-4 cursor-pointer text-sm lg:text-xl text-slate-50 transition-colors duration-300 hover:text-green "
-                        aria-label="Reddit"
+                        className="text-lg mx-4 text-slate-50"
+                        href={item.link}
                       >
                         {item.label}
-                      </ScrolliLink>
+                      </Link>
                     );
                   })
                 : content.map((item) => {
@@ -47,7 +54,7 @@ const Footer = () => {
                       <Link
                         key={item.id}
                         href={item.link}
-                        className="mx-4 text-sm cursor-pointer lg:text-xl text-blue transition-colors duration-300 hover:text-green "
+                        className="mx-4 text-lg cursor-pointer lg:text-xl text-slate-50 "
                         aria-label="Reddit"
                       >
                         {item.label}
@@ -60,7 +67,7 @@ const Footer = () => {
           <hr className="my-6 border-blue md:my-10" />
 
           <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-            <p className="text-sm text-blue">© Epiver. All Rights Reserved.</p>
+            <p className="text-sm text-slate-50">© Epiver. All Rights Reserved.</p>
 
             <div className="flex mt-4 lg:mt-0 -mx-2">
               <Link
@@ -151,17 +158,21 @@ const Footer = () => {
 export default Footer;
 
 const content = [
-  { label: "A propos", link: "home", id: "home" },
-  { label: "Produits", link: "produit", id: "product" },
-  { label: "Services", link: "home", id: "home" },
+  { label: "À propos", link: "/", id: "A propos" },
+  { label: "Lombricompost", link: "lombricompost", id: "lombricompost" },
   {
-    label: "Références",
-    link: "references",
-    id: "references",
+    label: "Valorisation de biodechets",
+    link: "Valorisation_de_biodechets",
+    id: "Valorisation_de_biodechets",
   },
   {
-    label: "Certifications",
-    link: "certifications",
-    id: "certifications",
+    label: "Distributeurs",
+    link: "Distributeurs",
+    id: "Distributeurs",
+  },
+  {
+    label: "Contact",
+    link: "Contact",
+    id: "Contact",
   },
 ];

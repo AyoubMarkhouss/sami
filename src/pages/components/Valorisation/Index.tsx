@@ -11,7 +11,7 @@ const Index = () => {
         <hr className="w-full my-6 border-gray-300" />
       </div>
       <div className="grid grid-cols-3 items-center gap-x-3">
-        <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pr-10">
+        <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pr-10 text-justify">
           <p>
             EPIVER, perpétue et combine le savoir-faire et la technique dans le
             tri sélectif sur site et la valorisation des déchets, ainsi que de
@@ -52,7 +52,7 @@ const Index = () => {
             className="w-52 md:w-full"
           />
         </div>
-        <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pl-10">
+        <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pl-10 text-justify">
           <p>
             • En l&apos;absence de tri et d&apos;un ramassage adapté, les
             biodéchets sont collectés avec les ordures ménagères et ne

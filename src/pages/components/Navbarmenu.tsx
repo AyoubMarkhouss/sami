@@ -24,8 +24,8 @@ export default function Navnext() {
       label: "Valorisation de biodechets",
       link: "/Valorisation_de_biodechets",
     },
-    { label: "Destributeurs", link: "/destributeurs" },
-    { label: "Contact", link: "/contact" },
+    { label: "Destributeurs", link: "/Destributeurs" },
+    { label: "Contact", link: "/Contact" },
   ];
 
   const [navbarBlur, setNavbarBlur] = useState(false);
@@ -56,7 +56,7 @@ export default function Navnext() {
       <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden "
+          className="sm:hidden text-slate-50"
         />
         <NavbarBrand className="text-white text-xl">
           <Image
@@ -110,7 +110,7 @@ export default function Navnext() {
           <Button
             as={Link}
             className="bg-transparent text-lg text-slate-100"
-            href="/"
+            href="/Contact"
           >
             Contact
           </Button>

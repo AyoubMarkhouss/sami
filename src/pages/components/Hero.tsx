@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
+import { Link as ScrolliLink } from "react-scroll";
 
 const Hero = () => {
   const ref = useRef(null);
@@ -31,9 +32,19 @@ const Hero = () => {
           Lorem ipsum, dolor sit amet consecte enetur labore dicta suscipi
           tenetur labore dicta suscipit?
         </p>
+
         <Button className="w-40 h-14 text-xl">
-          Découvrir
-          <MdOutlineKeyboardDoubleArrowRight />
+          <ScrolliLink
+            smooth={true}
+            spy={true}
+            duration={1500}
+            offset={0}
+            to="about"
+            className="flex items-center gap-x-2"
+          >
+            Découvrir
+            <MdOutlineKeyboardDoubleArrowRight />
+          </ScrolliLink>
         </Button>
       </motion.div>
     </div>

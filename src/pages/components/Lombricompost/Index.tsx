@@ -12,7 +12,7 @@ const Index = () => {
         <hr className="w-full my-6 border-gray-300" />
       </div>
       <div className="grid grid-cols-3 items-center gap-x-3">
-        <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pr-10">
+        <div className="col-span-3 md:col-span-2 text-lg text-slate-50 md:pr-10 text-justify">
           <p>
             Epiver® est un lombricompost riche en matières agronomiques issues
             de la valorisation de fumiers équins et ovins par les lombrics.
