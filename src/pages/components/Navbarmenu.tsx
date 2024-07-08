@@ -58,16 +58,18 @@ export default function Navnext() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden text-slate-50"
         />
-        <NavbarBrand className="text-white text-xl">
+        <NavbarBrand className="text-white text-xl w-full flex justify-center">
           <Image
             alt="logo"
             src="/logo.png"
             width={1200}
             height={1200}
-            className="w-16 ml-24 sm:ml-0"
+            className="w-16"
           />
         </NavbarBrand>
+        <div className="w-[20px]"></div>
       </NavbarContent>
+
       <NavbarContent className="hidden sm:flex gap-3" justify="end">
         <NavbarItem>
           <Button
@@ -117,18 +119,6 @@ export default function Navnext() {
         </NavbarItem>
       </NavbarContent>
 
-      {/* <NavbarContent justify="end">
-        <NavbarItem>
-          <Button
-            as={Link}
-            className="h-12 w-12 rounded-3xl bg-[#A67B5B] text-slate-100 text-xl flex items-center justify-center "
-            href="contact"
-            variant="flat"
-          >
-            <IoIosMail size={30} />
-          </Button>
-        </NavbarItem>
-      </NavbarContent> */}
       <NavbarMenu className="mt-8 sm:mt-0 bg-darkbrown">
         {menuItems.map((item) => (
           <NavbarMenuItem key={item.label}>
