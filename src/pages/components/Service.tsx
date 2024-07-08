@@ -2,6 +2,8 @@ import { motion, useInView } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { FaTractor } from "react-icons/fa";
+import Barleyleft from "./SVG/Barleyleft";
+import Barleyright from "./SVG/Barleyright";
 
 const Service = () => {
   const ref = useRef(null);
@@ -30,8 +32,10 @@ const Service = () => {
           </motion.p>
         </div>
 
-        <motion.h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-50 sm:text-4xl md:mx-auto">
+        <motion.h2 className="max-w-xl flex items-center justify-center mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-50 sm:text-4xl md:mx-auto">
+          <Barleyleft className="w-20" />
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <Barleyright className="w-20" />
         </motion.h2>
       </motion.div>
       <motion.div className="grid max-w-screen-lg gap-8 lg:grid-cols-2 sm:mx-auto">
