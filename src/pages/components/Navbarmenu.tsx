@@ -24,7 +24,7 @@ export default function Navnext() {
       label: "Valorisation de biodechets",
       link: "/Valorisation_de_biodechets",
     },
-    { label: "Destributeurs", link: "/Destributeurs" },
+    { label: "Distributeurs", link: "/Distributeurs" },
     { label: "Contact", link: "/Contact" },
   ];
 
