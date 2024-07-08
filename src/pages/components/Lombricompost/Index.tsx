@@ -7,11 +7,11 @@ const Index = () => {
   return (
     <div className="mx-5 md:mx-20 my-28">
       <div className="py-10 flex items-center justify-center">
-        <Barleyleft className="w-20" />
+        <Barleyleft className="hidden md:flex w-20" />
         <h1 className="text-slate-50 text-4xl md:text-6xl font-bold">
           Lombricompost
         </h1>
-        <Barley className="w-20" />
+        <Barley className="hidden md:flex w-20" />
         {/* <hr className="w-full my-6 border-gray-300" /> */}
       </div>
       <div className="grid grid-cols-3 items-center gap-x-3">

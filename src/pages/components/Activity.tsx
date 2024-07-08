@@ -32,9 +32,9 @@ const Activity = () => {
         </div>
 
         <motion.h2 className="max-w-xl flex items-center justify-center mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-slate-50 sm:text-4xl md:mx-auto">
-          <Barleyleft className="w-20" />
+          <Barleyleft className="hidden md:flex w-20" />
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          <Barleyright className="w-20" />
+          <Barleyright className="hidden md:flex w-20" />
         </motion.h2>
       </motion.div>
       <div
