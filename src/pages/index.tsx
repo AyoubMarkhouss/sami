@@ -8,15 +8,22 @@ import Activity from "./components/Activity";
 import Carousel from "./components/Carousel";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <meta name="description" content="lorem impsum" />
+        <link rel="icon" href="/logo.png" />
+        <title>Epiver</title>
+        <meta property="og:image" content="/logo.png" />
+      </Head>
       <Navbarmenu />
       <Hero />
-      <About/> 
+      <About />
       <Service />
       <Activity />
       <Carousel />
