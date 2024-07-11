@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -12,10 +12,12 @@ import {
 } from "@nextui-org/react";
 import Image from "next/image";
 import { IoIosMail } from "react-icons/io";
+import { motion } from "framer-motion";
+
 
 export default function Navnext() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
+  const ref = useRef(null);
   // const menuItems = ["À propos", "Services", "Expertises", "Blog", "Contact"];
   const menuItems = [
     { label: "À propos", link: "/" },
@@ -59,63 +61,90 @@ export default function Navnext() {
           className="sm:hidden text-slate-50"
         />
         <NavbarBrand className="text-white text-xl w-full flex justify-center">
-          <Image
-            alt="logo"
-            src="/logo.png"
-            width={1200}
-            height={1200}
-            className="w-16"
-          />
+          <Link href="/">
+            <Image
+              alt="logo"
+              src="/logo.png"
+              width={1200}
+              height={1200}
+              className="w-16"
+            />
+          </Link>
         </NavbarBrand>
         <div className="w-[20px]"></div>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-3" justify="end">
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-lg text-slate-100"
-            href="/"
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8, borderRadius: "100%" }}
           >
-            À propos
-          </Button>
+            <Button
+              as={Link}
+              className="bg-transparent text-lg text-slate-100"
+              href="/"
+            >
+              À propos
+            </Button>
+          </motion.div>
         </NavbarItem>
 
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-lg text-slate-100"
-            href="/lombricompost"
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8, borderRadius: "100%" }}
           >
-            Lombricompost
-          </Button>
+            <Button
+              as={Link}
+              className="bg-transparent text-lg text-slate-100"
+              href="/lombricompost"
+            >
+              Lombricompost
+            </Button>
+          </motion.div>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-lg text-slate-100"
-            href="/Valorisation_de_biodechets"
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8, borderRadius: "100%" }}
           >
-            Valorisation de biodechets
-          </Button>
+            <Button
+              as={Link}
+              className="bg-transparent text-lg text-slate-100"
+              href="/Valorisation_de_biodechets"
+            >
+              Valorisation de biodechets
+            </Button>
+          </motion.div>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-lg text-slate-100"
-            href="/"
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8, borderRadius: "100%" }}
           >
-            Distributeurs
-          </Button>
+            <Button
+              as={Link}
+              className="bg-transparent text-lg text-slate-100"
+              href="/"
+            >
+              Distributeurs
+            </Button>
+          </motion.div>
         </NavbarItem>
         <NavbarItem>
-          <Button
-            as={Link}
-            className="bg-transparent text-lg text-slate-100"
-            href="/Contact"
+          <motion.div
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8, borderRadius: "100%" }}
           >
-            Contact
-          </Button>
+            <Button
+              as={Link}
+              className="bg-transparent text-lg text-slate-100"
+              href="/Contact"
+            >
+              Contact
+            </Button>
+          </motion.div>
         </NavbarItem>
       </NavbarContent>
 

@@ -3,6 +3,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import React from "react";
 
+
 const Carousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 6000 }),
@@ -11,7 +12,7 @@ const Carousel = () => {
     <div className="relative h-[70vh] my-10">
       <div className="embla" ref={emblaRef}>
         <div className="embla__container h-[70vh] ">
-          <div className="embla__slide">
+          {/* <div className="embla__slide">
             <Image
               alt=""
               width={2200}
@@ -19,13 +20,13 @@ const Carousel = () => {
               src="/bg.jpg"
               className="top-0 w-full object-cover md:bg-cover md:w-screen h-full"
             />
-          </div>
+          </div> */}
           <div className="embla__slide">
             <Image
               alt=""
               width={2200}
               height={2200}
-              src="/bg.jpg"
+              src="/bg2.jpg"
               className="top-0 w-full object-cover md:bg-cover md:w-screen h-full"
             />
           </div>

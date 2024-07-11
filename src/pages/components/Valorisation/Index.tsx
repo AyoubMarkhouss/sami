@@ -1,9 +1,14 @@
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 import Barleyleft from "../SVG/Barleyleft";
 import Barleyright from "../SVG/Barleyright";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
 
 const Index = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
+
   return (
     <div className="mx-5 md:mx-20 my-28">
       <div className="py-10 md:flex justify-center items-center">
@@ -46,7 +51,13 @@ const Index = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-3 items-center gap-x-3 pt-10">
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, x: -100 }}
+        animate={isInView ? { opacity: 1, x: 0 } : ""}
+        transition={{ duration: 1 }}
+        className="grid grid-cols-3 items-center gap-x-3 pt-10"
+      >
         <div className="hidden md:flex justify-center items-center col-span-3 md:col-span-1 pt-5 md:pt-0">
           <Image
             alt=""
@@ -87,7 +98,7 @@ const Index = () => {
             className="w-52 md:w-full"
           />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

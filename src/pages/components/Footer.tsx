@@ -1,13 +1,15 @@
 import Image from "next/image";
-import React, { ReactNode } from "react";
+import React, { ReactNode, useRef } from "react";
 import { FiInstagram } from "react-icons/fi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebookSquare } from "react-icons/fa";
 import { useRouter } from "next/router";
 // import { Link as ScrolliLink } from "react-scroll";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const Footer = () => {
+  const ref = useRef(null);
   const router = useRouter();
   return (
     <div>
@@ -40,13 +42,18 @@ const Footer = () => {
                       // >
                       //   {item.label}
                       // </ScrolliLink>
-                      <Link
-                        key={item.id}
-                        className="text-lg mx-4 text-slate-50"
-                        href={item.link}
+                      <motion.div
+                        whileHover={{ scale: 1.2 }}
+                        whileTap={{ scale: 0.8, borderRadius: "100%" }}
                       >
-                        {item.label}
-                      </Link>
+                        <Link
+                          key={item.id}
+                          className="text-lg mx-4 text-slate-50"
+                          href={item.link}
+                        >
+                          {item.label}
+                        </Link>
+                      </motion.div>
                     );
                   })
                 : content.map((item) => {
@@ -67,7 +74,9 @@ const Footer = () => {
           <hr className="my-6 border-blue md:my-10" />
 
           <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-            <p className="text-sm text-slate-50">© Epiver. All Rights Reserved.</p>
+            <p className="text-sm text-slate-50">
+              © Epiver. All Rights Reserved.
+            </p>
 
             <div className="flex mt-4 lg:mt-0 -mx-2">
               <Link

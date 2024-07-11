@@ -6,10 +6,13 @@ import Head from "next/head";
 import { MdMail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
 
 const Contact: React.FC = () => {
   const form = useRef(null);
+   const ref = useRef(null);
+   const isInView = useInView(ref, { once: false });
 
   return (
     <>
@@ -19,7 +22,13 @@ const Contact: React.FC = () => {
       >
         <div className="container px-2 sm:px-6 md:px-8 lg:px-14 xl:px-36 mx-auto py-10">
           <div className="lg:flex lg:items-center lg:-mx-6">
-            <div className="relative lg:w-1/2 lg:mx-6 m-6">
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, x: -100 }}
+              animate={isInView ? { opacity: 1, x: 0 } : ""}
+              transition={{ duration: 0.8 }}
+              className="relative lg:w-1/2 lg:mx-6 m-6"
+            >
               <h1 className="semibold z-30 text-4xl md:font-semibold text-white  lg:text-7xl ">
                 Discutons !
               </h1>
@@ -50,9 +59,15 @@ const Contact: React.FC = () => {
                   ></iframe>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="mt-8 lg:w-1/2 lg:mx-6 m-5 z-30">
+            <motion.div
+              ref={ref}
+              initial={{ opacity: 0, x: 100 }}
+              animate={isInView ? { opacity: 1, x: 0 } : ""}
+              transition={{ duration: 0.8 }}
+              className="mt-8 lg:w-1/2 lg:mx-6 m-5 z-30"
+            >
               <div className="w-full p-3 md:px-8 md:py-10 mx-auto overflow-hidden bg-slate-50 rounded-[36px]  lg:max-w-xl ">
                 <div className="mt-3">
                   <form className="text-darkbg" ref={form}>
@@ -111,7 +126,7 @@ const Contact: React.FC = () => {
                   </form>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         {/* <ToastContainer

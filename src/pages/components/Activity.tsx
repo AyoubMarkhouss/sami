@@ -69,7 +69,7 @@ const Activity = () => {
               ></Link>
             </p>
             <Link
-              href="/"
+              href="/lombricompost"
               aria-label="Category"
               title="Visit the East"
               className="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -81,15 +81,17 @@ const Activity = () => {
               consequuntur magni voluptatem doloremque.
             </p>
             <div className="flex items-end justify-end">
-              <Button className="bg-lightbrown text-sm">
-                <Link href="/lombricompost">En savoir plus</Link>
-
-                <MdOutlineKeyboardArrowRight />
-              </Button>
+              <Link href="/lombricompost">
+                <Button className="bg-lightbrown">
+                  <span className="text-black">En savoir plus</span>
+                  <MdOutlineKeyboardArrowRight />
+                </Button>
+              </Link>
             </div>
           </div>
         </motion.div>
         <motion.div
+         
           ref={ref}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={isInView ? { opacity: 1, scale: 1 } : ""}
@@ -129,14 +131,17 @@ const Activity = () => {
               consequuntur magni voluptatem doloremque.
             </p>
             <div className="flex items-end justify-end">
-              <Button className="bg-lightbrown text-sm">
-                <Link href="/Valorisation_de_biodechets">En savoir plus</Link>
-                <MdOutlineKeyboardArrowRight />
-              </Button>
+              <Link href="/Valorisation_de_biodechets">
+                <Button className="bg-lightbrown">
+                  <span className="text-black">En savoir plus</span>
+                  <MdOutlineKeyboardArrowRight />
+                </Button>
+              </Link>
             </div>
           </div>
         </motion.div>
         <motion.div
+          
           ref={ref}
           initial={{ opacity: 0, scale: 0.5 }}
           animate={isInView ? { opacity: 1, scale: 1 } : ""}
@@ -176,10 +181,12 @@ const Activity = () => {
               consequuntur magni voluptatem doloremque.
             </p>
             <div className="flex items-end justify-end">
-              <Button className="bg-lightbrown text-sm">
-                <Link href="/Distributeurs">En savoir plus</Link>
-                <MdOutlineKeyboardArrowRight />
-              </Button>
+              <Link href="/Distributeurs">
+                <Button className="bg-lightbrown">
+                  <span className="text-black">En savoir plus</span>
+                  <MdOutlineKeyboardArrowRight />
+                </Button>
+              </Link>
             </div>
           </div>
         </motion.div>
