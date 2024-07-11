@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
         id="contact"
       >
         <div className="container px-2 sm:px-6 md:px-8 lg:px-14 xl:px-36 mx-auto py-10">
-          <div className="lg:flex lg:items-center lg:-mx-6">
+          <div className="lg:flex lg:items-center lg:-mx-6 overflow-hidden">
             <motion.div
               ref={ref}
               initial={{ opacity: 0, x: -100 }}
@@ -129,12 +129,7 @@ const Contact: React.FC = () => {
             </motion.div>
           </div>
         </div>
-        {/* <ToastContainer
-          position="bottom-right"
-          hideProgressBar={true}
-          theme="light"
-          autoClose={2000}
-        /> */}
+        
       </div>
     </>
   );
