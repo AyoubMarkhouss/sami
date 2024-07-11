@@ -3,7 +3,6 @@ import useEmblaCarousel from "embla-carousel-react";
 import Image from "next/image";
 import React from "react";
 
-
 const Carousel = () => {
   const [emblaRef] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 6000 }),
@@ -26,7 +25,7 @@ const Carousel = () => {
               alt=""
               width={2200}
               height={2200}
-              src="/bg2.jpg"
+              src="/bg2.webp"
               className="top-0 w-full object-cover md:bg-cover md:w-screen h-full"
             />
           </div>
