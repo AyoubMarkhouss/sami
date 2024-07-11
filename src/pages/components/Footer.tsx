@@ -9,7 +9,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Footer = () => {
-  const ref = useRef(null);
   const router = useRouter();
   return (
     <div>
@@ -42,18 +41,14 @@ const Footer = () => {
                       // >
                       //   {item.label}
                       // </ScrolliLink>
-                      <motion.div
-                        whileHover={{ scale: 1.2 }}
-                        whileTap={{ scale: 0.8, borderRadius: "100%" }}
+
+                      <Link
+                        key={item.id}
+                        className="text-lg mx-4 text-slate-50"
+                        href={item.link}
                       >
-                        <Link
-                          key={item.id}
-                          className="text-lg mx-4 text-slate-50"
-                          href={item.link}
-                        >
-                          {item.label}
-                        </Link>
-                      </motion.div>
+                        {item.label}
+                      </Link>
                     );
                   })
                 : content.map((item) => {
