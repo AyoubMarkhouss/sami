@@ -58,7 +58,7 @@ export default function Navnext() {
       <NavbarContent justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden text-slate-50"
+          className="lg:hidden text-slate-50"
         />
         <NavbarBrand className="text-white text-xl w-full flex justify-center">
           <Link href="/">
@@ -74,7 +74,7 @@ export default function Navnext() {
         <div className="w-[20px]"></div>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-3" justify="end">
+      <NavbarContent className="hidden lg:flex gap-3" justify="end">
         <NavbarItem>
           <motion.div
             whileHover={{ scale: 1.2 }}

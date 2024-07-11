@@ -16,7 +16,7 @@ const Hero = () => {
         src="/bg2.webp"
         width={2200}
         height={2200}
-        className="absolute object-cover h-full opacity-65 -mt-28 sm:-mt-0"
+        className="absolute object-cover h-full opacity-65 -mt-28 sm:-mt-0 "
       />
       <motion.div
         ref={ref}

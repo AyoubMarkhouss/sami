@@ -13,7 +13,7 @@ const Activity = () => {
   const isInView = useInView(ref, { once: false });
 
   return (
-    <div className="relative px-4 py-16 mx-auto md:mx-14 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="relative px-4 py-16 mx-auto sm:max-w-xl md:max-w-full  md:px-24 lg:px-8 lg:py-20">
       <motion.div
         ref={ref}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -39,7 +39,7 @@ const Activity = () => {
       </motion.div>
       <div
         ref={ref}
-        className="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full"
+        className="grid gap-8 lg:grid-cols-3 xl:px-14 sm:mx-auto lg:max-w-full"
       >
         <motion.div
           ref={ref}

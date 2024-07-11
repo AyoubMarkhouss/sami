@@ -43,7 +43,7 @@ const About = () => {
             quae explicabo.
           </p>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center md:col-span-2 lg:col-span-1">
           <img
             className="object-cover w-96 h-full sm:h-full"
             src="/logo.png"
