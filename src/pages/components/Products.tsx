@@ -65,7 +65,7 @@ const Products = () => {
           }}
           className="max-w-xl md:mx-auto text-center lg:max-w-2xl md:mb-12"
         >
-          <motion.h2 className="max-w-xl flex items-center justify-center font-sans text-3xl font-bold leading-none tracking-tight text-slate-50 sm:text-4xl md:mx-auto">
+          <motion.h2 className="max-w-xl flex items-center justify-center font-sans text-4xl font-bold leading-none tracking-tight text-slate-50 sm:text-4xl md:mx-auto">
             <Barleyleft className="hidden md:flex w-20" />
             Nos produits
             <Barleyright className="hidden md:flex w-20" />
@@ -237,11 +237,11 @@ const Products = () => {
       >
         <Slider {...settings}>
           <div className="px-2 md:px-5">
-            <div className="overflow-hidden bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
+            <div className="overflow-hidden py-5 md:py-2 bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
               <Image
                 width={1500}
                 height={1500}
-                src="/bg.jpg"
+                src="/prod.png"
                 className="object-cover w-full h-64"
                 alt=""
               />
@@ -278,11 +278,11 @@ const Products = () => {
             </div>
           </div>
           <div className="px-2 md:px-5">
-            <div className="overflow-hidden bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
+            <div className="overflow-hidden py-5 md:py-2 bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
               <Image
                 width={1500}
                 height={1500}
-                src="/bg.jpg"
+                src="/prod.png"
                 className="object-cover w-full h-64"
                 alt=""
               />
@@ -319,11 +319,11 @@ const Products = () => {
             </div>
           </div>
           <div className="px-2 md:px-5">
-            <div className="overflow-hidden bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
+            <div className="overflow-hidden py-5 md:py-2 bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
               <Image
                 width={1500}
                 height={1500}
-                src="/bg.jpg"
+                src="/prod.png"
                 className="object-cover w-full h-64"
                 alt=""
               />
@@ -360,11 +360,11 @@ const Products = () => {
             </div>
           </div>
           <div className="px-2 md:px-5">
-            <div className="overflow-hidden bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
+            <div className="overflow-hidden py-5 md:py-2 bg-slate-50 transition-shadow duration-300  rounded shadow-sm">
               <Image
                 width={1500}
                 height={1500}
-                src="/bg.jpg"
+                src="/prod.png"
                 className="object-cover w-full h-64"
                 alt=""
               />
