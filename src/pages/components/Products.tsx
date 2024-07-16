@@ -255,7 +255,7 @@ const Products = () => {
                   ></Link>
                 </p>
                 <Link
-                  href="/lombricompost"
+                  href="/Produits/Prod1"
                   aria-label="Category"
                   title="Visit the East"
                   className="inline-block mb-5 text-center text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -267,7 +267,7 @@ const Products = () => {
                   consequuntur magni voluptatem doloremque.
                 </p> */}
                 <div className="flex justify-center items-center">
-                  <Link href="/lombricompost">
+                  <Link href="/Produits/Prod1">
                     <Button className="bg-lightbrown">
                       <span className="text-black">En savoir plus</span>
                       <MdOutlineKeyboardArrowRight />
@@ -296,7 +296,7 @@ const Products = () => {
                   ></Link>
                 </p>
                 <Link
-                  href="/lombricompost"
+                  href="/Produits/Prod1"
                   aria-label="Category"
                   title="Visit the East"
                   className="inline-block mb-5 text-center text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -308,7 +308,7 @@ const Products = () => {
                   consequuntur magni voluptatem doloremque.
                 </p> */}
                 <div className="flex justify-center items-center">
-                  <Link href="/lombricompost">
+                  <Link href="/Produits/Prod1">
                     <Button className="bg-lightbrown">
                       <span className="text-black">En savoir plus</span>
                       <MdOutlineKeyboardArrowRight />
@@ -337,7 +337,7 @@ const Products = () => {
                   ></Link>
                 </p>
                 <Link
-                  href="/lombricompost"
+                  href="/Produits/Prod1"
                   aria-label="Category"
                   title="Visit the East"
                   className="inline-block mb-5 text-center text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -349,7 +349,7 @@ const Products = () => {
                   consequuntur magni voluptatem doloremque.
                 </p> */}
                 <div className="flex justify-center items-center">
-                  <Link href="/lombricompost">
+                  <Link href="/Produits/Prod1">
                     <Button className="bg-lightbrown">
                       <span className="text-black">En savoir plus</span>
                       <MdOutlineKeyboardArrowRight />
@@ -378,7 +378,7 @@ const Products = () => {
                   ></Link>
                 </p>
                 <Link
-                  href="/lombricompost"
+                  href="/Produits/Prod1"
                   aria-label="Category"
                   title="Visit the East"
                   className="inline-block mb-5 text-center text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700"
@@ -390,7 +390,7 @@ const Products = () => {
                   consequuntur magni voluptatem doloremque.
                 </p> */}
                 <div className="flex justify-center items-center">
-                  <Link href="/lombricompost">
+                  <Link href="/Produits/Prod1">
                     <Button className="bg-lightbrown">
                       <span className="text-black">En savoir plus</span>
                       <MdOutlineKeyboardArrowRight />
