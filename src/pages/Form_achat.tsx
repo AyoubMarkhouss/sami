@@ -21,7 +21,7 @@ export default function Contact() {
         <div className=" md:flex items-center justify-center">
           <Barleyleft className="hidden md:flex w-20" />
           <h1 className="text-slate-50 text-center text-4xl md:text-6xl font-extrabold">
-            Formulaire d'achat
+            Formulaire d&apos;achat
           </h1>
           <Barleyright className="hidden md:flex w-20" />
           <hr className="flex sm:hidden w-full my-6 border-gray-300" />
