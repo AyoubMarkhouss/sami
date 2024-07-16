@@ -12,7 +12,7 @@ export default function Contact() {
       <Head>
         <meta name="description" content="Contact" />
         <link rel="icon" href="/logo.png" />
-        <title>Epiver - Formulaire d'achat</title>
+        <title>Epiver - Formulaire d&apos;achat</title>
         <meta property="og:image" content="/logo.png" />
       </Head>
       <Navbarmenu />
